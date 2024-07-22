@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Snippets</title>
+    <style>
+        .code {
+            display: none;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+        button {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>
+            <pre class="code"><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Login Page&lt;/title&gt;
+    &lt;script&gt;
+        function validate() {
+            var txt_username = document.getElementById("username").value;
+            var txt_password = document.getElementById("password").value;
+            var Username = "admin";
+            var Password = "12345";
+            if (txt_username == Username && txt_password == Password) {
+                alert("Login successful!");
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Login Form&lt;/h2&gt;
+    &lt;form name="myform" onsubmit="validate(); return false;"&gt;
+        Username:
+        &lt;input type="text" id="username" name="username"&gt; &lt;br&gt;
+        Password:
+        &lt;input type="password" id="password" name="password"&gt;&lt;br&gt;
+        &lt;input type="submit" value="Login"&gt; &lt;br&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <button class="btn" onclick="copyCode(this)">Copy</button>
+        </li>
+        <li>
+            <pre class="code"><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Program no-2&lt;/title&gt;
+    &lt;link rel="stylesheet" href="mystyle2.css"&gt;
+&lt;/head&gt;
+&lt;body style="background-color:blue;"&gt;
+    &lt;img id="bigcloud" height="150" src="bigCloud.png" width="150"&gt;
+    &lt;img id="smallcloud" height="100" src="smallCloud.png" width="100"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+Mystyle2.css
+#bigcloud {
+    animation: bobble 2s infinite;
+}
+#smallcloud {
+    animation: bobbleways 3s infinite;
+}
+@keyframes bobble {
+    0% {
+        transform: translate3d(50px, 80px, 0px);
+    }
+    50% {
+        transform: translate3d(50px, 40px, 0px);
+    }
+    100% {
+        transform: translate3d(50px, 80px, 0px);
+    }
+}
+@keyframes bobbleways {
+    0% {
+        transform: translate3d(50px, 80px, 0px);
+    }
+    50% {
+        transform: translate3d(50px, 40px, 0px);
+    }
+    100% {
+        transform: translate3d(50px, 80px, 0px);
+    }
+}</code></pre>
+            <button class="btn" onclick="copyCode(this)">Copy</button>
+        </li>
+        <li>
+            <pre class="code"><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Program no-3&lt;/title&gt;
+    &lt;link rel="stylesheet" href="mystyle3.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;keyframes example with Animation&lt;/h1&gt;
+    &lt;div&gt;BLDEA &lt;br&gt; IBOBCA &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+Mystyle3.css
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+}
+@keyframes example {
+    0% {background-color: red;}
+    25% {background-color: black;}
+    50% {background-color: yellow;}
+    75% {background-color: green;}
+    100% {background-color: blue;}
+}</code></pre>
+            <button class="btn" onclick="copyCode(this)">Copy</button>
+        </li>
+        <li>
+            <pre class="code"><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Program no-4&lt;/title&gt;
+    &lt;link rel="stylesheet" href="mystyle4.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h4&gt;font style and font Size&lt;/h4&gt;
+    &lt;hr&gt;
+    &lt;h1&gt;normal&lt;/h1&gt;
+    &lt;h2&gt;bold&lt;/h2&gt;
+    &lt;h3&gt;italic&lt;/h3&gt;
+    &lt;br&gt;&lt;br&gt;&lt;br&gt; 16
+    &lt;div class="p1"&gt;This is paragraph 1&lt;/div&gt;
+    &lt;div class="p2"&gt;This is paragraph 2&lt;/div&gt;
+    &lt;div class="p3"&gt;This is paragraph 3&lt;/div&gt;
+    &lt;div class="w1"&gt;paragraph with Weight 1&lt;/div&gt;
+    &lt;div class="w2"&gt;paragraph with Weight 2&lt;/div&gt;
+    &lt;div class="w3"&gt;paragraph with Weight 3&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+Mystyle4.css
+body {
+    background-color:orange;
+}
+h1 {
+    font-style: normal;
+}
+h2 {
+    font-style: bold;
+}
+h3 {
+    font-style: oblique;
+}
+.p1 {
+    font-size: 10px;
+}
+.p2 {
+    font-size: 20px;
+}
+.p3 {
+    font-size: 40px;
+}
+.w1 {
+    font-weight: 500;
+}
+.w2 {
+    font-weight: 700;
+}
+.w3 {
+    font-weight: 900;
+}</code></pre>
+            <button class="btn" onclick="copyCode(this)">Copy</button>
+        </li>
+        <li>
+            <pre class="code"><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Program no-5&lt;/title&gt;
+    &lt;link rel="stylesheet" href="mystyle5.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Multiple Animation&lt;/h1&gt;
+    &lt;div&gt;BLDEA &lt;br&gt; IBOBCA &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+Mystyle5.css
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+} 
+@keyframes example {
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100% {background-color: red; left: 0px; top: 0px;}
+}</code></pre>
+            <button class="btn" onclick="copyCode(this)">Copy</button>
+        </li>
+        <li>
+            <pre class="code"><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Program no-6&lt;/title&gt;
+    &lt;script&gt;
+        function status() {
+            var image = document.getElementById('Image');
+            if (image.src.match("ONbulb"))
+                image.src = "OFFbulb.jpg";
+            else
+                image.src = "ONbulb.jpg";
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Click on the bulb to turn it ON and OFF&lt;/h1&gt;
+    &lt;img id="Image" onclick="status()" src="OFFbulb.jpg"&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <button class="btn" onclick="copyCode(this)">Copy</button>
+        </li>
+    </ol>
+    
+
+        <!-- <li>
+            <code class="code">
+                
+                using System;
+public class ComplexNum
+{
+ public int real;
+ public int imaginary;
+ public ComplexNum(int real, int imaginary)
+ {
+ this.real = real;
+ this.imaginary = imaginary;
+ }
+ // Syntax of Operator Overloading
+ public static ComplexNum operator +(ComplexNum n1, ComplexNum n2)
+ {
+ return new ComplexNum(n1.real + n2.real, n1.imaginary + n2.imaginary);
+ }
+ // Override the ToString method to display an complex number in the suitable format:
+ public override string ToString()
+ {
+ return (String.Format("{0} + {1}i", real, imaginary));
+ }
+ public static void Main()
+ {
+ ComplexNum cnum1 = new ComplexNum(4, 5);
+ ComplexNum cnum2 = new ComplexNum(5, 6);
+ // Add two Complex objects (num1 and num2) through the
+ ComplexNum addition = cnum1 + cnum2;
+ // Print the numbers
+ Console.WriteLine("First complex number: {0}", cnum1);
+ Console.WriteLine("Second complex number: {0}", cnum2);
+ Console.WriteLine("RESULT :The sum of the two numbers: {0}", addition);
+ // Hault the output screen
+ Console.Read();
+ }
+}
+            </code>
+            <button class="btn">cpoy</button>
+        </li> -->
+        <!-- <li>
+            <code class="code">
+              
+                file_path <- "C:/Users/91702/OneDrive/Desktop/test.txt"
+                write.table("Hi", file = file_path, sep = "\t", row.names = FALSE)
+                read_data <- read.table(file = file_path, header = TRUE, sep = "\t")
+                print(read_data)
+              
+            </code>
+            <button class="btn">cpoy</button>
+        </li>
+        <li>
+            <code class="code">
+                x <- c(1,2,3,4,5)
+y <- c(4,6,8,2, 10)
+plot(x, y, type="l", main="Line Chart Example", xlab="X-axis Label", ylab="Y-axis Label", col="red")
+data <- rnorm(1000) # Generating random data
+hist(data, main="Histogram Example", xlab="Value", ylab="Frequency", col="lightblue", border="black")
+x <- c(1, 2, 3, 4, 5)
+y <- c(2, 4, 6, 8, 10)
+plot(x, y, type="l", main="Line Chart Example", xlab="X-axis Label", ylab="Y-axis Label", col="red")
+slices <- c(10, 20, 15, 30, 25)
+labels <- c("A", "B", "C", "D", "E")
+pie(slices, labels, main="Pie Chart Example", col=rainbow(length(slices)))
+data <- c(12, 15, 18, 20, 22, 25, 30, 40, 50)
+boxplot(data, main="Box Plot Example", xlab="Data", col="green", border="black")
+x <- c(1, 2, 3, 4, 5)
+y <- c(2, 3, 1, 4, 5)
+plot(x, y, main="Scatterplot Example", xlab="X-axis Label", ylab="Y-axis Label", pch=19, col="blue")
+               
+             
+              
+            </code>
+            <button class="btn">cpoy</button>
+        </li>
+        <li>
+            <code class="code">
+
+
+                data(mtcars)
+                str(mtcars)
+                head(mtcars)
+                summary(mtcars)
+                average_mpg <- mean(mtcars$mpg)
+                cat("Average MPG:", average_mpg, "\n")
+                max_hp_car <- mtcars[which.max(mtcars$hp), "model"]
+                cat("Car model with the highest horsepower:", max_hp_car, "\n")
+                mtcars$efficiency <- mtcars$mpg / mtcars$cyl
+                head(mtcars)
+                plot(mtcars$hp, mtcars$efficiency, xlab = "Horsepower", ylab = "Efficiency", main = "Fuel Efficiency vs. Horsepower")   
+             
+              
+            </code>
+            <button class="btn">cpoy</button>
+        </li>
+        <li>
+            <code class="code">
+
+                data(mtcars)
+                model <- lm(mpg ~ hp, data = mtcars)
+                summary(model)
+                plot(mtcars$hp, mtcars$mpg, xlab = "Horsepower", ylab = "MPG", main = "Linear Regression Example")
+                abline(model, col = "red")
+
+
+
+               
+             
+              
+            </code>
+            <button class="btn">cpoy</button>
+        </li>
+        <li>
+            <code class="code">
+
+                mode<-function (vect){
+                    a<-unique(vect)
+                    a[which.max(tabulate(match(vect,a)))]
+                    }
+                    siz<- as.numeric(readline(prompt = "Enter a size: "))
+                    vect<-c()
+                    for(i in 1:siz){
+                    num<- as.numeric(readline(prompt = "Enter a number: "))
+                    vect<-append(vect,num)
+                    }
+                    vect_mean<-mean(vect)
+                    cat("\n mean of the vector",vect_mean)
+                    #vect_mode<-mode(vect)
+                    vect_median<-median(vect)
+                    cat("\n median of the vector",vect_median)
+                    vect_mode<-mode(vect)
+                    cat("\n mode of the vector",vect_mode)
+               
+             
+              
+            </code>
+            <button class="btn">cpoy</button>
+        </li> -->
+    </ol>
+    <script src="script.js"></script>
+</body>
+</html>
